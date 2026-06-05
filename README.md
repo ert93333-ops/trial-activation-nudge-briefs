@@ -6,6 +6,7 @@ Static browser-local MVP for turning public-safe trial or onboarding notes into 
 
 - Landing: `https://ert93333-ops.github.io/trial-activation-nudge-briefs/`
 - Checklist: `https://ert93333-ops.github.io/trial-activation-nudge-briefs/trial-activation-email-template.html`
+- Public Gist checklist: `https://gist.github.com/ert93333-ops/c366f37677a7b822499490637313a488`
 
 ## Scope
 
