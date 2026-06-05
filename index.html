@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trial Activation Nudge Briefs | Trial activation email template</title>
+  <meta name="description" content="Paste public-safe trial or onboarding notes and generate an activation nudge brief, missing-context checklist, and safer follow-up outline before lifecycle or CS responds.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Trial Activation Nudge Briefs">
+  <meta property="og:description" content="Send trial activation nudges with the right milestone, value proof, and next step.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ert93333-ops.github.io/trial-activation-nudge-briefs/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://ert93333-ops.github.io/trial-activation-nudge-briefs/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workflow">Skip to workflow</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Trial Activation Nudge Briefs home">Trial Activation Nudge Briefs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Pricing</a>
+        <a href="trial-activation-email-template.html">Template</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <h1>Send trial activation nudges with the right milestone, value proof, and next step.</h1>
+          <p class="hero-subtitle">Paste public-safe trial or onboarding notes and get an activation nudge brief, missing-context checklist, and safer follow-up outline before lifecycle or CS responds.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#workflow">Generate activation brief</a>
+            <a class="button secondary" href="trial-activation-email-template.html">View nudge checklist</a>
+          </div>
+        </div>
+        <aside class="brief-preview" aria-label="Brief preview">
+          <p class="brief-label">Checks before nudge</p>
+          <strong>Role, activation milestone, blocked step, trial timing, value proof, CTA, help path, opt-out-safe wording, and privacy risk.</strong>
+          <p>No product analytics export. No CRM integration. No email sending. No creepy tracking copy.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <div class="shell section-grid">
+        <div>
+          <h2>Turn trial notes into a first-value nudge brief.</h2>
+          <p>Use public-safe notes only. Do not paste product analytics exports, CRM exports, personal emails, user-level event logs, credentials, or private customer data.</p>
+          <div class="input-grid">
+            <label>Trial or onboarding notes<textarea id="trial-notes" placeholder="Example: Marketing manager signed up from SEO, invited 0 teammates, and has not connected the workspace yet."></textarea></label>
+            <label>User role / segment / plan / source<textarea id="user-context" class="short-textarea" placeholder="Example: marketing manager, Pro trial, signed up from SEO landing page..."></textarea></label>
+            <label>Activation milestone / first value<textarea id="milestone-notes" class="short-textarea" placeholder="Example: connect workspace and publish first report..."></textarea></label>
+            <label>Incomplete step / friction<textarea id="friction-notes" class="short-textarea" placeholder="Example: has not invited team, import failed, no data connected..."></textarea></label>
+            <label>Signup age / trial day / TTV context<textarea id="timing-notes" class="short-textarea" placeholder="Example: trial day 3, signup 48 hours ago, trial ends in 11 days..."></textarea></label>
+            <label>Value proof / job-to-be-done<textarea id="value-notes" class="short-textarea" placeholder="Example: needs weekly reporting to save manual spreadsheet work..."></textarea></label>
+            <label>Next action / CTA / help path<textarea id="cta-notes" class="short-textarea" placeholder="Example: connect workspace, open setup guide, book onboarding call, reply for help..."></textarea></label>
+            <label>Current nudge draft<textarea id="nudge-draft" class="short-textarea" placeholder="Example: Want help getting your first report live? Here is the 3-minute setup guide. Opt out any time."></textarea></label>
+          </div>
+          <div class="form-actions">
+            <button class="button secondary" type="button" id="sample-button">Load sample trial</button>
+            <button class="button primary" type="button" id="generate-button">Generate activation brief</button>
+          </div>
+          <p class="copy-status" id="workflow-error" role="status" aria-live="polite"></p>
+        </div>
+        <aside class="output-panel" id="output-panel" aria-live="polite">
+          <div class="status-pill"><span class="status-dot"></span><span id="output-status">Waiting for trial notes</span></div>
+          <div id="brief-output" class="brief-output"><p>Paste trial activation context to generate a nudge-ready brief.</p></div>
+          <button class="button small" type="button" id="copy-brief" disabled>Copy brief</button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="shell">
+        <h2>Pay only if this improves activation follow-up quality.</h2>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price">$19/month</p>
+            <p>For founders and growth operators sending manual or semi-manual activation nudges.</p>
+            <button class="button full plan-button" type="button" data-plan="Starter">Request Starter access</button>
+          </article>
+          <article class="price-card">
+            <h3>Team</h3>
+            <p class="price">$79/month</p>
+            <p>For PLG, lifecycle, onboarding, CS, and product teams improving trial activation.</p>
+            <button class="button full plan-button" type="button" data-plan="Team">Request Team access</button>
+          </article>
+        </div>
+        <form class="handoff-panel" id="intent-form">
+          <h3>Purchase-intent fallback</h3>
+          <p>Stored locally in this browser. The public issue handoff excludes private email by default.</p>
+          <div class="input-grid compact">
+            <label>Email<input id="intent-email" type="email" placeholder="you@example.com"></label>
+            <label>Role/team<input id="intent-role" type="text" placeholder="Founder, growth PM, lifecycle marketer, onboarding lead..."></label>
+            <label>Trial volume<input id="trial-volume" type="text" placeholder="Example: 400 trials/month"></label>
+            <label>Current nudge process<input id="current-process" type="text" placeholder="Example: Customer.io sequence plus manual CSM follow-up"></label>
+            <label>Plan interest<select id="plan-interest"><option>Starter</option><option>Team</option></select></label>
+            <label>Willingness to pay<input id="willingness" type="text" placeholder="$19/month, $79/month, paid pilot..."></label>
+          </div>
+          <button class="button primary" type="submit">Request early access</button>
+          <p class="copy-status" id="intent-status" role="status" aria-live="polite"></p>
+          <div id="remote-intent" hidden>
+            <a class="button secondary" id="remote-intent-link" target="_blank" rel="noreferrer">Open public request</a>
+            <button class="button ghost" type="button" id="copy-remote-intent">Copy request details</button>
+            <p class="copy-status" id="remote-copy-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <p>Browser-local MVP. No product analytics integration, CRM export upload, email sending, customer-data storage, or backend.</p>
+      <a href="trial-activation-email-template.html">Trial activation nudge checklist</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
